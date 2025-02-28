@@ -1,0 +1,259 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a; 
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+.auctionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.auctioneer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff7f;
+}
+.auctionInfo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00ff7f;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.auctionItem {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  padding-bottom: 250;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 255, 127, 0.5);
+  position: relative;
+}
+
+.auctionContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.plate {
+  font-size: 24px;
+  font-weight: bold;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.timer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4747;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.bidHistory {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  width: 30%;
+  min-width: 320px;
+  box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.6);
+  text-align: left;
+}
+
+.bidHistory ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bidHistory li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+/* Phần chứa toàn bộ form đặt giá thầu */
+.bidContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 16px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 320px;
+  box-shadow: 0px 4px 12px rgba(0, 255, 127, 0.7);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bidContainer:hover {
+  transform: scale(1.02);
+}
+
+/* Tiêu đề */
+.bidBox h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff7f;
+  margin-bottom: 10px;
+}
+
+/* Giá hiện tại */
+.bidRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.currentBid {
+  font-size: 19px;
+  font-weight: bold;
+  color: #00ff7f;
+}
+
+/* Chỉnh cân bằng form bước giá */
+.bidStepRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  gap: 10px;
+}
+
+/* Bước giá */
+.bidStep {
+  color: #ffaa00;
+  flex: 2;
+  text-align: left;
+}
+
+/* Nhân bước giá */
+.multiplierContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  justify-content: center;
+}
+
+.multiplierContainer button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.multiplierContainer button:hover {
+  background: #00ff7f;
+  color: black;
+}
+.multiplier {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff7f;
+  padding: 0 6px;
+}
+.equalsSymbol {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.totalIncrease {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffaa00;
+  flex: 2;
+  text-align: right;
+}
+.bidButton {
+  background: linear-gradient(90deg, #00ff7f, #008f5f);
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 255, 127, 0.4);
+  margin-top: 8px;
+}
+
+.bidButton:hover {
+  background: linear-gradient(90deg, #008f5f, #006f3f);
+  color: white;
+  transform: scale(1.05);
+}
+
+
+.scrollContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollContainer li {
+  display: flex;
+  justify-content: space-between; /* Đưa ID và số tiền về 2 phía */
+  padding: 10px 15px;
+  background: #222; /* Màu nền */
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 8px; /* Tăng khoảng cách giữa các mục */
+}
+
+/* Tùy chỉnh thanh cuộn */
+.scrollContainer {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}

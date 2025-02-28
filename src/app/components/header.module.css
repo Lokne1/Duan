@@ -1,0 +1,80 @@
+.header {
+  background-color: #1a1a1a; /* Nền tối giống footer */
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Logo - Đẩy về lề trái */
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #00ff7f;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+
+.navbar {
+  flex: 2;
+  display: flex;
+  margin-left: -180;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  font-size: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+.navbar a:hover {
+  color: #00ff7f;
+  background-color: rgba(0, 255, 127, 0.2);
+}
+.clockcontainer {
+  flex: 1;
+  text-align: right;
+  color: #00ff7f;
+}
+
+.clock {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 20px;
+  color: #b3b3b3;
+}
